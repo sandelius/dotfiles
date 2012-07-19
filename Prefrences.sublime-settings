@@ -1,0 +1,11 @@
+{
+  "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+  "font_face": "Menlo",
+  "font_size": 12.0,
+  "line_padding_bottom": 1.5,
+  "line_padding_top": 1.5,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true,
+  "word_wrap": false
+}
