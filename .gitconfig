@@ -1,0 +1,21 @@
+[user]
+  name = Tobias Sandelius
+  email = tobias@sandelius.org
+[core]
+  editor = vim
+[alias]
+  s = status
+  b = branch
+  bc = !sh -c 'git checkout -b $1 && git push -u origin $1' --
+  bd = !sh -c 'git branch -d $1 && git push origin :$1' --
+  c = commit
+  cm = commit -m
+  ps = push
+  pl = pull
+  a = add
+  d = diff
+  co = checkout
+  sm = submodule
+  bl = blame
+[color]
+  ui = true
