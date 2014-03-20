@@ -1,2 +1,1 @@
-update:  --no-rdoc
-install: --no-rdoc
+gem: --no-rdoc --no-ri
