@@ -2,21 +2,23 @@
 export EDITOR='subl'
 export CLICOLOR=1
 
-# PATHS
+# Paths
 export PATH="~/bin:${PATH}:/usr/local/bin"
 
-# PROMT
+# Promt
 export PS1='\e[0:35m⌘\e[m \e[0:36m\w/\e[m \e[0:33m`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`\e[m'
 
-# RBENV
+# Rbenv
 export RBENV_ROOT="${HOME}/.rbenv"
 if [ -d "${RBENV_ROOT}" ]; then
   export PATH="${RBENV_ROOT}/bin:${PATH}"
   eval "$(rbenv init -)"
 fi
 
-# ALIASES
+# Aliases
 alias be="bundle exec"
+
+alias node6="node --harmony --use-strict"
 
 alias db:reset="bundle exec rake db:drop db:create db:migrate db:seed"
 
@@ -34,3 +36,7 @@ alias memcached:stop="killall memcached"
 
 alias mongo:start="brew services start mongodb"
 alias mongo:stop="brew services stop mongodb"
+
+# Node Version Manager
+export NVM_DIR="/Users/sandelius/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
